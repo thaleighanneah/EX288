@@ -11,7 +11,9 @@ config_s2i
 ######## CUSTOMIZATION STARTS HERE ############
 
 echo "---> Installing application source"
-
+cp -rpf /tmp/src/*html ./
+DATE='date "+%b %d, %Y"'
+echo "Page built on $DATE" >> info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
 
